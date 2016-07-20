@@ -11,7 +11,7 @@ import (
 )
 
 func usage() {
-	fmt.Fprintf(os.Stderr, "usage: crawl http://example.com/path/file.html\n")
+	fmt.Fprintf(os.Stderr, "usage: go mCrawl http://website.com\n")
 	flag.PrintDefaults()
 	os.Exit(2)
 }
