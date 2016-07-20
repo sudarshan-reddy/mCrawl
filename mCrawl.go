@@ -64,7 +64,7 @@ func enqueue(uri string, queue chan string) {
 	}
 	defer resp.Body.Close()
 
-	links := collectlinks.All(resp.Body)
+	links := getlinks.All(resp.Body)
 
 	for _, link := range links {
 		absolute := fixUrl(link, uri)
